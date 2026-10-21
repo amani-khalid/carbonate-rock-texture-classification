@@ -42,9 +42,9 @@ The notebooks are located in the `Models/` directory.
 | Notebook | Description |
 | --- | --- |
 | `baseline_model_with_cv.ipynb` | ResNet50 baseline training, local fine-tuning, cross-validation, and final evaluation |
-| `model_3(with aug)_newest.ipynb` | Initial WPT–ResNet50 training with data augmentation and energy-based channel selection |
-| `model_3_finetune_cv.ipynb` | WPT local fine-tuning, five-fold cross-validation, and final evaluation |
-| `model_4_dtcwt_finetune_cv.ipynb` | DTCWT feature extraction, initial training, local fine-tuning, cross-validation, evaluation, and inference examples |
+| `wpt_model.ipynb` | Initial WPT–ResNet50 training with data augmentation and energy-based channel selection |
+| `wpt_model_finetune_cv.ipynb` | WPT local fine-tuning, five-fold cross-validation, and final evaluation |
+| `dtcwt_model_finetune_cv.ipynb` | DTCWT feature extraction, initial training, local fine-tuning, cross-validation, evaluation, and inference examples |
 
 ## Recorded Results
 
