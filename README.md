@@ -98,59 +98,6 @@ local_data/
 
 Use matching class-folder names across training and evaluation sets. The original images and trained checkpoints must be supplied separately to reproduce the experiments.
 
-## Installation
-
-The saved execution logs indicate Python 3.11. Create a virtual environment and install the required packages:
-
-```bash
-python -m venv .venv
-```
-
-Activate it on macOS or Linux:
-
-```bash
-source .venv/bin/activate
-```
-
-Or on Windows PowerShell:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Install the notebook dependencies:
-
-```bash
-python -m pip install torch torchvision numpy Pillow PyWavelets pytorch-wavelets scikit-learn pandas matplotlib seaborn torchsummary jupyterlab ipykernel
-```
-
-This command provides a starting environment; it does not recreate a fully pinned historical environment.
-
-## Running the Notebooks
-
-Clone the repository and launch JupyterLab:
-
-```bash
-git clone https://github.com/amani-khalid/carbonate-rock-texture-classification.git
-cd carbonate-rock-texture-classification
-jupyter lab
-```
-
-Before executing a notebook:
-
-1. Update the absolute file paths to match your machine.
-2. Configure the dataset folders and checkpoint locations.
-3. Set an output directory for generated models and metrics.
-4. Review the notebook’s training and evaluation sections before running them.
-
-Relevant settings include:
-
-- `data_root`: initial training dataset.
-- `pretrained_ckpt_path`: initial trained checkpoint used for local adaptation.
-- `new_data_root`: local training dataset.
-- `deployment_test_root`: local test dataset.
-- `save_dir`: output directory.
-
 The WPT fine-tuning notebook depends on an initial WPT checkpoint. The baseline and DTCWT notebooks contain both initial training and later adaptation stages.
 
 The code selects CUDA when available and otherwise uses the CPU. Initial loading of ImageNet-pretrained weights requires an internet connection unless the weights are already cached.
@@ -169,11 +116,8 @@ The recorded results are retained for transparency. Future corrected experiments
 
 ## Research Background
 
-This repository accompanies the senior research project:
+This repository accompanies the senior research project
 
 **Classification of Carbonate Rock Textures from X-ray Micro-tomography Using Wavelet-Based Transfer Learning**
 
-- **Author:** Amani K. Alawlaqi
-- **Supervisor:** Dr. Mohamed Soufiane Jouini
-- **Course:** MATH 498 — Senior Research Project 2
-- **Report date:** April 24, 2026
+
